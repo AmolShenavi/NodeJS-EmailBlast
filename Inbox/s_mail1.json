@@ -1,0 +1,6 @@
+{
+    "to":"<emailAddress1>",
+    "cc":"<emailAddress2>",
+    "subject":"NodeJS first application",
+    "body":"Dear, This is my first NodeJS application. "
+}
