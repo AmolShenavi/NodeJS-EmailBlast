@@ -1,0 +1,6 @@
+{
+    "to":"<emailAddress1>",
+    "cc":"<emailAddress2>",
+    "subject":"<EmailSubject>",
+    "body":"<MessageBody>"
+}
