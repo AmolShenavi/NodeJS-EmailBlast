@@ -8,17 +8,30 @@
 var nodemailer = require('nodemailer');
 const config = require('./config');
 
+// for hotmail config
 let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    secure: false,
-    port  : config.smtp_port  ,
-    auth: {
-      user: config.myemail,
-      pass: config.mypassword
-    },
-    tls: {   // for localhost server
-      rejectUnauthorized: false
-    }
-  });
+  service: 'hotmail',
+  auth: {
+    user: config.myemail,
+    pass: config.mypassword
+  },
+});
+
+
+// for gmail config
+// let transporter = nodemailer.createTransport({
+//     service: 'Gmail',
+//     secure: false,
+//     port  : config.smtp_port  ,
+//     auth: {
+//       user: config.myemail,
+//       pass: config.mypassword
+//     },
+//     tls: {   // for localhost server
+//       rejectUnauthorized: true
+//     }
+//   });
+
+
 
   module.exports = transporter;

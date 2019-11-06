@@ -76,7 +76,7 @@ async function Blast() {
                         }
                         else {
                             console.log('check JSON content required(to, cc, subject,body) & try again ..');
-                            logger.error(' JSON file is not valid..');
+                            logger.error(' JSON file is not valid...');
                             return false;
                         }
                     }
@@ -165,7 +165,7 @@ function Interval() {
         console.log(' <<<<<<<<<Interval>>>>>>>>> ');
         myEmitter.emit('Monitor');
     }
-        , 10000);
+        , 100000);
 }
 
 

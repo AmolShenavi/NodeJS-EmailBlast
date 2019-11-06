@@ -5,12 +5,9 @@ module.exports = {
     
     
     myemail    : "<YourEmailAddress>",
-    mypassword : "<YourPassword>" ,
-    smtp_port : <smtp_port_no>, // mostly 25
+    mypassword : "<Password>" , 
+    smtp_port : 587,
     
     LogDir  :  "./Logs",
     LogFile :"Log.json"
-
-
-
 };
